@@ -26,7 +26,7 @@ public class Subpack{
   }
   
   public Subpack(float[] cellTemperatures, float[] boardTemperatures, float[] cellVoltages, int subpackNumber){
-    this.cellTemps = cellTemperatures;
+    this.cellTemps = cellTemperatures; //<>//
     this.boardTemps = boardTemperatures;
     this.cellVoltages = cellVoltages;
     this.subpackNumber = subpackNumber;
@@ -87,7 +87,7 @@ public class Subpack{
           fill(ORANGE);
         }
         try{
-          text("Board Temp " + (i*2 + j + 1) + ": " + str(boardTemps[i*3 +j]).substring(0,5), boardTempTextX, boardTempTextY);
+          text("Board Temp " + (i*2 + j + 1) + ": " + str(boardTemps[i*3 +j]), boardTempTextX, boardTempTextY);
         }
         catch(Exception e){
           System.out.println("Oh man it didn't like that float");
@@ -118,7 +118,7 @@ public class Subpack{
         fill(ORANGE);
       }
       try{
-        text("Cell " + (i+1) + ": " + (i < 9 ? "  " : "") + str(cellVoltages[i]).substring(0,5), textX, textY);
+        text("Cell " + (i+1) + ": " + (i < 9 ? "  " : "") + str(cellVoltages[i]), textX, textY);
       }
       catch(Exception e){
         System.out.println("Oh man it didn't like that float");
@@ -171,7 +171,7 @@ public class Subpack{
       }
       
       try{
-        text("Cell Temp " + (i+1) + ": " + str(cellTemps[i]).substring(0, 5), cellTempTextX, cellTempTextY);
+        text("Cell Temp " + (i+1) + ": " + str(cellTemps[i]), cellTempTextX, cellTempTextY);
       }
       catch(Exception e){
         System.out.println("Oh man it didn't like that float");
