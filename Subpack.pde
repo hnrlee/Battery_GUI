@@ -5,8 +5,8 @@ public class Subpack{
   public float[] boardTemps = new float[9];//0-2 first BMS Slave Board Temp, 3-5 second BMS Slave Board Temp, 6-8 third BMS Slave Board Temp
   public float[] cellVoltages = new float[28];
   
-  float acceptableVoltageDifference = 0.014;
-  float worryingVoltageDifference = 0.03;
+  float acceptableVoltageDifference = 0.150;
+  float worryingVoltageDifference = 0.300;
   
   final color CYAN = color(#00FFFF);
   final color PURPLE = color(#FFA0FF);
