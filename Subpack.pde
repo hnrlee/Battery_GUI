@@ -174,7 +174,6 @@ public class Subpack{
         text("Cell Temp " + (i+1) + ": " + str(cellTemps[i]), cellTempTextX, cellTempTextY);
       }
       catch(Exception e){
-        System.out.println("Oh man it didn't like that float");
       }
     }
   }
